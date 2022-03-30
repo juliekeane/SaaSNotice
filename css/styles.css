@@ -1,0 +1,76 @@
+/* styles for SaaSNotice */
+
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+
+/* Announcement section */
+
+.col-headline {
+    text-align: center;
+    padding-top: 5em;
+}
+
+.ScheduleAnnouncement {
+    margin-bottom: 10%;
+}
+
+.card1 {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.to {
+    text-align: center;
+}
+
+.redtext {
+    color: red;
+}
+
+.fas {
+    line-height: 3rem;
+}
+
+
+/* Cards section */
+
+.apology {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.btn {
+    margin-bottom: 15px;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.cardtimes {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20 5;
+}
+
+hr {
+    background: #fff;
+    padding-top: 10px;
+    position: relative;
+}
+
+.fa-file-download {
+    margin-right: 5px;
+}
+
+.plan-plea {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.quitting {
+    text-align: center;
+    margin-top: 3%;
+}

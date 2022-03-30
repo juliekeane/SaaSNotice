@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>IntelliSoft Group Upgrade Notice</title>
+
+    <!-- Bootstrap CSS -must come first before all other stylesheets -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+    <!-- Local CSS Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="icon" href="">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4f21a39a84.js" crossorigin="anonymous"></script>
+
+    <!--Handle the Enter & Esc keys-->
+    <script language="javascript">
+        function keydown(evt) {
+            if (evt.keyCode == 13 || evt.keyCode == 27) {
+                window.close();
+            }
+        }
+    </script>
+</head>
+
+<body onkeydown="keydown(event)">
+    <!--Populate the update notice page-->
+
+    <section class="announcement">
+        <div container-fluid>
+            <div>
+                <div class="col col-headline">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h1 class="headline">Important Upgrade Notice</h1>
+                    <h2 class="subheadline">Service will not be available</h2>
+                </div>
+    </section>
+
+    <section class="cards">
+        <div class="row">
+            <div class="col-12">
+                <div class="card card1">
+                    <div class="card-header">
+                        What we're doing...
+                    </div>
+                    <div class="card-body">
+                        <p class="ScheduleAnnouncement">IntelliSoft Group will be performing <strong class="redtext ">scheduled Software & WebView Upgrades to V17.1</strong> during the following time period:</p>
+                        <strong><p class="cardtimes " id="fromDate ">...</p>
+            <p class="to ">to</p>
+            <p class="cardtimes " id="toDate">...</p></strong>
+                        <p class="plan-plea">Please plan accordingly.</p>
+                        <p> Your production SaaS link will <strong>not</strong> be available during this period. We are asking you to please be out of your training link by
+                            <strong>8pm, Friday December 11th.</strong></p>
+                        <hr />
+                        <p class="apology">We apologize for any inconvenience while we upgrade your service to the latest features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quitting">
+        <div>
+            <button type="button" class="btn btn-outline-secondary" onclick="window.close(); ">Close this Window</button>
+    </section>
+    </div>
+
+    <!--Set the update dates-->
+    <script language="javascript">
+        var argDates = window.dialogArguments;
+        var pos = argDates.indexOf("||", 0);
+        var fromDate = argDates.substring(0, pos);
+        var toDate = argDates.substring(pos + 2);
+        document.getElementById("fromDate").innerHTML = unescape(fromDate) + " EDT ";
+        document.getElementById("toDate").innerHTML = unescape(toDate) + " EDT ";
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+
+</body>
+
+</html>
